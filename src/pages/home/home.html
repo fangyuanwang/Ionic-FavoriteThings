@@ -31,4 +31,20 @@
     </ion-row>
 
   </ion-grid>
+  <hr>
+  <h2>Favorite Number = {{favoriteNumber}}</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 col-md-2>
+        <button block ion-button (click)="setNumber(favoriteNumber + 1)">Up</button>
+      </ion-col>
+      <ion-col col-4 col-md-2>
+        <button block ion-button color="secondary" (click)="setNumber(favoriteNumber - 1)">Down</button>
+      </ion-col>
+      <ion-col col-4 col-md-2>
+        <button block ion-button outline (click)="setNumber(0)">Reset</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
