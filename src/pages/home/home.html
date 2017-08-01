@@ -1,14 +1,34 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Favorite Things
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h2>Favorite Color</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 id="box" offset-4>gray</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4 col-md-2>
+        <button block ion-button (click)="setColor('blue')">Blue</button>
+      </ion-col>
+      <ion-col col-4 col-md-2>
+        <button block ion-button color="secondary" (click)="setColor('green')">Green</button>
+      </ion-col>
+      <ion-col col-4 col-md-2>
+        <button block ion-button outline (click)="setColor('red')">Red</button>
+      </ion-col>
+      <ion-col col-4 col-md-2>
+        <button block ion-button clear (click)="setColor('purple')">Purple</button>
+      </ion-col>
+      <ion-col col-4 col-md-2>
+        <button block ion-button color="roseRed" (click)="setColor('#800000')">Rose Red</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>

@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  setColor(selectedColor: string): void {
+    console.log(selectedColor);
+  }
+
 }
